@@ -1,0 +1,32 @@
+# Created using wingetcreate 1.12.13.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.10.0.schema.json
+
+PackageIdentifier: kimch0627.ImeBadge
+PackageVersion: 1.7.0
+InstallerLocale: ko-KR
+InstallerType: inno
+Scope: user
+InstallModes:
+- interactive
+- silent
+- silentWithProgress
+InstallerSwitches:
+  Custom: /CURRENTUSER
+UpgradeBehavior: install
+AppsAndFeaturesEntries:
+- DisplayName: ImeBadge
+  Publisher: kimch0627
+  ProductCode: '{7E2C1D7A-9B1E-4E63-9A2B-5F1C0B7D3A21}_is1'
+  InstallerType: inno
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/kimch0627/windows-ime-badge/releases/download/v1.7.0/ImeBadge-Setup-1.7.0-x64.exe
+  InstallerSha256: 56F086D0B062535A5C38ACC8952C5AB5CB6EBC287DB43F99BAE1C7A25A370A5E
+  ProductCode: '{7E2C1D7A-9B1E-4E63-9A2B-5F1C0B7D3A21}_is1'
+- Architecture: arm64
+  InstallerUrl: https://github.com/kimch0627/windows-ime-badge/releases/download/v1.7.0/ImeBadge-Setup-1.7.0-arm64.exe
+  InstallerSha256: F18AF340BC6601FE873669529E62BF0424D03997FF58B2131FDD29C2BAEF5448
+  ProductCode: '{7E2C1D7A-9B1E-4E63-9A2B-5F1C0B7D3A21}_is1'
+ManifestType: installer
+ManifestVersion: 1.10.0
+ReleaseDate: 2026-09-28
